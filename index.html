@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <title>Zar Soluções | Segurança e Suporte de TI</title>
+</head>
+
+<body>
+    <div class="particulas"></div>
+    <nav class="navegacao">
+        <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="menu" id="menu">
+            <li><a href="#inicio" class="menu-link">Inicio</a></li>
+            <li><a href="#servicos" class="menu-link">Serviços</a></li>
+            <li><a href="#diferenciais" class="menu-link">Diferenciais</a></li>
+            <li><a href="#contato" class="menu-link">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main id="inicio" class="cabecalho">
+        <img src="img/logo/zarlogo.png" alt="Logo da Zar Soluções" class="logo-img">
+        <h1>ZAR SOLUÇÕES</h1>
+        <p class="cabecalho-sub-titulo">Segurança e Agilidade para sua Tecnologia.</p>
+        <a href="#" onclick="acaoZap()" class="botao-cta-header"><strong>SOLICITAR SUPORTE AGORA!</strong></a>
+    </main>
+
+    <section id="sobre" class="sobre">
+        <h2 class="sobre-titulo">CONHEÇA O FUNDADOR</h2>
+        <div class="sobre-caixa-horizontal">
+            <img src="img/fundador/profile-img.jpg" alt="Foto de César Augusto" class="foto-perfil-sobre">
+            <div class="sobre-texto">
+                <p class="sobre-paragrafo">
+                    Olá! Eu sou o César Augusto, fundador da Zar Soluções. Estou cursando Análise e Desenvolvimento de
+                    Sistemas e sou apaixonado por encontrar soluções práticas para problemas complexos de tecnologia.
+                </p>
+                <p class="sobre-paragrafo">
+                    Minha missão é ser o parceiro de TI que pequenos negócios e usuários precisam: alguém que entende
+                    sua urgência, fala sua língua e garante que sua tecnologia funcione com <strong>Segurança e
+                    Agilidade.</strong>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="servicos">
+        <h2 class="servicos-titulo">SERVIÇOS</h2>
+        <div class="projeto-caixa">
+            <div class="projetos-card">
+                <div class="caixa-texto-projeto">
+                    <h3 class="info-projetos">&#9989; Manutenção e Upgrade</h3>
+                    <p class="paragrafo-projetos">
+                        Formatação, limpeza de sistema, troca de peças e otimização para seu PC voar.
+                    </p>
+                </div>
+            </div>
+
+            <div class="projetos-card">
+                <div class="caixa-texto-projeto">
+                    <h3 class="info-projetos">&#9989; Segurança de Redes</h3>
+                    <p class="paragrafo-projetos">
+                        Configuração de firewall, antivírus e proteção de redes Wi-Fi para pequenos negócios.
+                    </p>
+                </div>
+            </div>
+
+            <div class="projetos-card">
+                <div class="caixa-texto-projeto">
+                    <h3 class="info-projetos">&#9989; Suporte Técnico Rápido</h3>
+                    <p class="paragrafo-projetos">
+                        Atendimento remoto ou presencial para resolver problemas urgentes e manter sua produtividade.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="diferenciais" class="diferenciais">
+        <h2 class="projetos-titulo">POR QUE ESCOLHER A ZAR SOLUÇÕES?</h2>
+        <div class="projeto-caixa">
+            <div class="projetos-card">
+                <div class="caixa-texto-projeto">
+                    <h3 class="info-projetos">&#x1F91D; SEGURANÇA</h3>
+                    <p class="paragrafo-projetos">
+                        Proteção total para seus dados. Configuração de redes, remoção de vírus e as melhores práticas
+                        de cibersegurança para seu negócio.
+                    </p>
+                </div>
+            </div>
+
+            <div class="projetos-card">
+                <div class="caixa-texto-projeto">
+                    <h3 class="info-projetos">&#x1F91D; CONFIANÇA</h3>
+                    <p class="paragrafo-projetos">
+                        Parceria e transparência. Fazemos um diagnóstico honesto e entregamos a solução que você
+                        realmente precisa, sem "letras miúdas".
+                    </p>
+                </div>
+            </div>
+
+            <div class="projetos-card">
+                <div class="caixa-texto-projeto">
+                    <h3 class="info-projetos">&#x1F91D; AGILIDADE</h3>
+                    <p class="paragrafo-projetos">
+                        Seu negócio não pode parar. Oferecemos suporte rápido, remoto ou presencial, para resolver seus
+                        problemas com máxima urgência.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contato">
+        <h2 class="titulo-contato">PRECISA DE UM ORÇAMENTO?</h2>
+        <form class="formulario-contato" id="formulario" onsubmit="enviarWats(event)">
+            <div class="grupo-form">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" class="campo-form" placeholder="Seu nome" required>
+            </div>
+            <div class="grupo-form">
+                <label for="mensagem">Mensagem:</label>
+                <textarea placeholder="Digite sua mensagem" rows="10" style="resize: none" class="campo-form"
+                    id="mensagem"></textarea>
+            </div>
+            <button type="submit" class="botao-form">Enviar WhatsApp</button>
+        </form>
+    </section>
+
+    <footer>
+        <p class="texto-rodape">
+            Zar Soluções © 2025. Todos os direitos reservados.
+        </p>
+    </footer>
+
+    <script>
+        // Hamburger menu
+        const hamburger = document.getElementById('hamburger');
+        const menu = document.getElementById('menu');
+
+        hamburger.addEventListener('click', () => {
+            menu.classList.toggle('ativo');
+            hamburger.classList.toggle('ativo');
+        });
+
+        // Fechar menu ao clicar em um link
+        document.querySelectorAll('.menu-link').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.remove('ativo');
+                hamburger.classList.remove('ativo');
+            });
+        });
+
+        function acaoZap() {
+            const telefone = '5511981683775';
+            const texto = 'Olá, Zar Soluções! Vim pelo site e preciso de suporte.';
+            const msgFormatada = encodeURIComponent(texto);
+            const url = `https://wa.me/${telefone}?text=${msgFormatada}`;
+            window.open(url, '_blank')
+        }
+
+        function enviarWats(event) {
+            event.preventDefault();
+            const nome = document.getElementById('nome').value;
+            const mensagem = document.getElementById('mensagem').value;
+            const telefone = '5511981683775';
+            const texto = `Olá! Me chamo ${nome}, ${mensagem}`;
+            const msgFormatada = encodeURIComponent(texto);
+            const url = `https://wa.me/${telefone}?text=${msgFormatada}`;
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+
+</html>
