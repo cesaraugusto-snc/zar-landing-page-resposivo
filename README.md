@@ -1,32 +1,32 @@
-# Landing Page Responsiva - Zar Soluções
+# Landing Page Responsiva – Zar Soluções
 
-Uma landing page moderna e responsiva desenvolvida com HTML, CSS e JavaScript para apresentar serviços de suporte técnico e TI. O site conta com design elegante com gradientes, animações suaves e integração direta com WhatsApp para contato.
+Projeto desenvolvido com o objetivo de praticar os fundamentos do desenvolvimento web, utilizando HTML, CSS e JavaScript puro. A landing page apresenta serviços de suporte técnico e TI, com foco em estrutura, responsividade e interações básicas no front-end.
 
-## 🎯 Características
-- Design responsivo (desktop, tablet e mobile)
-- Menu hamburger funcional em mobile
-- Integração WhatsApp para contato direto
-- Formulário de orçamento com envio via WhatsApp
-- Animações e efeitos visuais modernos
-- HTTPS seguro (hospedado no GitHub Pages)
+## Tecnologias utilizadas
+- HTML5 (estrutura semântica)
+- CSS3 (Flexbox, Grid e responsividade)
+- JavaScript (manipulação do DOM e eventos)
+- Integração com WhatsApp Web
 
-## 📋 Seções
-- Header com CTA
-- Sobre o Fundador
-- Serviços oferecidos
-- Diferenciais da empresa
-- Formulário de contato
+## Funcionalidades
+- Layout responsivo para desktop, tablet e mobile
+- Menu mobile com interação via JavaScript
+- Formulário de contato com validação básica e envio de dados via WhatsApp
+- Estrutura organizada de arquivos e código
 
-## 🛠️ Tecnologias
-- HTML5
-- CSS3 (Flexbox, Grid, Gradients, Animations)
-- JavaScript (Vanilla)
-- WhatsApp Web API
+## Objetivo do projeto
+Este projeto faz parte da minha formação em Análise e Desenvolvimento de Sistemas e tem como objetivo consolidar conceitos essenciais de front-end, como organização de código, responsividade, lógica básica em JavaScript e experiência do usuário.
 
-## 📱 Responsividade
-- Desktop (1024px+)
-- Tablet (768px - 1024px)
-- Mobile (até 768px)
+## O que aprendi com este projeto
+- Estruturação semântica de páginas HTML
+- Criação de layouts responsivos utilizando Flexbox e Grid
+- Uso de JavaScript para interações simples no front-end
+- Organização de arquivos e versionamento com GitHub
 
-## 🚀 Acesso
+## Próximos passos
+- Melhorar a acessibilidade do site
+- Refatorar o código JavaScript
+- Implementar melhorias de usabilidade
+
+## Acesso ao projeto
 https://cesaraugusto-snc.github.io/zar-landing-page-resposivo/
