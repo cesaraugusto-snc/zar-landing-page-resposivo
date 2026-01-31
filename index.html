@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/logo/icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="assets/img/icon/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Zar Soluções | Segurança e Suporte de TI</title>
 </head>
 
@@ -26,16 +26,16 @@
     </nav>
 
     <main id="inicio" class="cabecalho">
-        <img src="img/logo/zarlogo.png" alt="Logo da Zar Soluções" class="logo-img">
+        <img src="assets/img/logo/zarlogo.png" alt="Logo da Zar Soluções" class="logo-img">
         <h1>ZAR SOLUÇÕES</h1>
         <p class="cabecalho-sub-titulo">Segurança e Agilidade para sua Tecnologia.</p>
-        <a href="#" onclick="acaoZap()" class="botao-cta-header"><strong>SOLICITAR SUPORTE AGORA!</strong></a>
+        <a href="#" onclick="btnZap()" id="botao-cta-header"><strong>SOLICITAR SUPORTE AGORA!</strong></a>
     </main>
 
     <section id="sobre" class="sobre">
         <h2 class="sobre-titulo">CONHEÇA O FUNDADOR</h2>
         <div class="sobre-caixa-horizontal">
-            <img src="img/fundador/profile-img.jpg" alt="Foto de César Augusto" class="foto-perfil-sobre">
+            <img src="/assets/img/fundador/profile-img.jpg" alt="Foto de César Augusto" class="foto-perfil-sobre">
             <div class="sobre-texto">
                 <p class="sobre-paragrafo">
                     Olá! Eu sou o César Augusto, fundador da Zar Soluções. Estou cursando Análise e Desenvolvimento de
@@ -44,7 +44,7 @@
                 <p class="sobre-paragrafo">
                     Minha missão é ser o parceiro de TI que pequenos negócios e usuários precisam: alguém que entende
                     sua urgência, fala sua língua e garante que sua tecnologia funcione com <strong>Segurança e
-                    Agilidade.</strong>
+                        Agilidade.</strong>
                 </p>
             </div>
         </div>
@@ -139,43 +139,7 @@
         </p>
     </footer>
 
-    <script>
-        // Hamburger menu
-        const hamburger = document.getElementById('hamburger');
-        const menu = document.getElementById('menu');
-
-        hamburger.addEventListener('click', () => {
-            menu.classList.toggle('ativo');
-            hamburger.classList.toggle('ativo');
-        });
-
-        // Fechar menu ao clicar em um link
-        document.querySelectorAll('.menu-link').forEach(link => {
-            link.addEventListener('click', () => {
-                menu.classList.remove('ativo');
-                hamburger.classList.remove('ativo');
-            });
-        });
-
-        function acaoZap() {
-            const telefone = '5511981683775';
-            const texto = 'Olá, Zar Soluções! Vim pelo site e preciso de suporte.';
-            const msgFormatada = encodeURIComponent(texto);
-            const url = `https://wa.me/${telefone}?text=${msgFormatada}`;
-            window.open(url, '_blank')
-        }
-
-        function enviarWats(event) {
-            event.preventDefault();
-            const nome = document.getElementById('nome').value;
-            const mensagem = document.getElementById('mensagem').value;
-            const telefone = '5511981683775';
-            const texto = `Olá! Me chamo ${nome}, ${mensagem}`;
-            const msgFormatada = encodeURIComponent(texto);
-            const url = `https://wa.me/${telefone}?text=${msgFormatada}`;
-            window.open(url, '_blank');
-        }
-    </script>
+    <script type="module" src="./js/main.js"></script>
 </body>
 
 </html>
